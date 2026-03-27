@@ -56,7 +56,7 @@ double Vector::size() const {
 
 void Vector::norm() {
     double div = size();
-    if (div != 0.0) return;
+    if (div == 0.0) return;
     for (unsigned comp = 0; comp < dim; ++comp)
         comps.set(comp, comps.get(comp) / div);
 }
