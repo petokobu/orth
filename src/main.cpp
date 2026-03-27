@@ -1,11 +1,6 @@
 #include "pvector.h"
 #include <iostream>
 
-void setup(Vector *v, double *vals, unsigned size) {
-    for (unsigned i = 0; i < size; ++i)
-        v->set(i, vals[i]);
-}
-
 void print(Vector v) {
     unsigned dim = v.get_dim();
     std::cout << "Vector values: (";
